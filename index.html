@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>MINDTRACHKER! | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+  <style>
+   #world-map-gdp {
+  background-color: transparent !important;
+}
+
+    .left_col {
+      background-color: #13648b !important; /* Deniz mavisi (teal) tonu */
+    }
+  
+    .nav.side-menu > li > a {
+      color: #ffffff; /* Menü yazı rengi beyaz */
+    }
+  
+    .nav.side-menu > li > a:hover {
+      background-color: #13648b; /* Hover rengi daha koyu teal */
+    }
+  
+    .site_title span {
+      color: #ffffff; /* Başlıktaki yazı rengi */
+    }
+  
+    .profile_info h2,
+    .profile_info span {
+      color: #ffffff; /* Profil kısmı yazıları */
+    }
+    .sidebar-footer {
+      background-color: #13648b
+    }
+    .nav-md{ background-color: #13648b; color: #13648b;}
+   
+  </style>
+  
+
+  <body class="nav-md">
+    
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><img src="images/M-5.png" alt="MINDTRACHTER Logo" style="height: 50px; vertical-align: middle;"> <span>MINDTRACHTER</span></a>
+            </div>
+             
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/kızneşesi.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Hoş geldin,</span>
+                <h2>HaYaBü</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+             
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Genel</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Anasayfa</a></li>
+                   
+                  </li>
+                  <li><a><i class="fa fa-pencil-square-o"></i> Psikolojik Testler <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="dept.html">Depresyon Testi</a></li>
+                      <li><a href="strest.html">Stres Testi</a></li>
+                      <li><a href="dikkatt.html">Dikkat Dağınıklığı Testi</a></li>
+                      <li><a href="anksiyetet.html">Anksiyete Testi</a></li>
+                      <li><a href="ozguvent.html">Özgüven Testi</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-child"></i> Aktivite <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="aktiviteg.html">Aktivite Günlüğü</a></li>
+                      <li><a href="duygug.html">Duygu Günlüğü</a></li>
+                 
+                      <li><a href="calendar.html">Planlayıcı</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li><a ><i class="fa fa-bar-chart-o"></i> Analiz ve Grafik <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="analiz.html">Test Grafik Analizleri</a></li>
+                      <li><a href="datat.html">Karşılaştırma Tabloları</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="onerid.html"><i class="fa fa-heart"></i>Öneri-Destek </span></a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="menu_section">
+                
+                <ul class="nav side-menu">
+                  <li><a href="hakkında.html"><i class="fa fa-info"></i> Hakkında</a>
+                  </li>
+                  <li><a href="ayarlar.html"><i class="fa fa-cogs"></i> Ayarlar </a>
+                  </li>
+                  <li><a href="login.html"><i class="fa fa-sign-out"></i> Çıkış </a>
+                  </li>                  
+                 
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Ayarlar" href="ayarlar.html">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Çıkış" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/kızneşesi.jpg" alt="">HaYaBü
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="profile.html"> Profilim</a>
+                      
+                  
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Çıkış</a>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+  <a href="#">
+    <i class="fa fa-bell"></i>
+  </a>
+</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <!-- /top tiles -->
+         
+
+
+            <div class="col-md-12 col-sm-12 ">
+
+
+
+              <div class="row">
+
+                <div class="col-md-12 col-sm-12 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Dünya Genelinde Zihinsel Sağlık İstatistikleri</h2>
+        
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="dashboard-widget-content">
+                        <div class="col-md-4 hidden-small">
+                            <h3>Zihinsel Sağlığı Gelişmiş Olan Ülkeler</h3>
+                          
+                          
+
+                          <table class="countries_list">
+                            <tbody>
+                              <tr>
+                                <td>Norveç</td>
+                                <td class="fs15 fw700 text-right">%81</td>
+                              </tr>
+                              <tr>
+                                <td>Japonya</td>
+                                <td class="fs15 fw700 text-right">%78</td>
+                              </tr>
+                              <tr>
+                                <td>Kanada</td>
+                                <td class="fs15 fw700 text-right">%75</td>
+                              </tr>
+                              <tr>
+                                <td>Almanya</td>
+                                <td class="fs15 fw700 text-right">%69</td>
+                              </tr>
+                              <tr>
+                                <td>Avustralya</td>
+                                <td class="fs15 fw700 text-right">%64</td>
+                              </tr>
+                              <tr>
+                                <td>İsveç</td>
+                                <td class="fs15 fw700 text-right">%59</td>
+                              </tr>
+                              <tr>
+                                <td>ABD</td>
+                                <td class="fs15 fw700 text-right">%54</td>
+                              </tr>
+                              <tr>
+                                <td>Brezilya</td>
+                                <td class="fs15 fw700 text-right">%49</td>
+                              </tr>
+                              <tr>
+                                <td>Türkiye</td>
+                                <td class="fs15 fw700 text-right">%47</td>
+                              </tr>
+                              <tr>
+                                <td>Hindistan</td>
+                                <td class="fs15 fw700 text-right">%40</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div id="world-map-gdp" class="col-md-8 col-sm-8 " style="height:300px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+
+
+                <!-- Start to do list -->
+                <div class="col-md-6 col-sm-6 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2> PLANLARIM<small>Bugün neler yaptın?</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                      <div class="">
+                        <ul class="to_do">
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Güne erken başladım. </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Su içmeyi ihmal etmedim.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Egzersiz yaptım.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Notlarımı gözden geçirdim</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Sağlıklı beslendim.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Kendime zaman ayırdım.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Uzun süre ekrana bakmamaya çalıştım.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Odamı topladım.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Yeni bir kitap okudum.</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> Günlük hedeflerimi kontrol ettim.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End to do list -->
+                
+                <!-- start of weather widget -->
+                <div class="col-md-6 col-sm-6 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>HAVA DURUMU <small>Anlık</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                       
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="temperature"><b>Pazar</b>, 07:30 
+                            <span>F</span>
+                            <span><b>C</b></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="weather-icon">
+                            <canvas height="84" width="84" id="partly-cloudy-day"></canvas>
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="weather-text">
+                            <h2>Trabzon<br><i>Parçalı Bulutlu</i></h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="weather-text pull-right">
+                          <h3 class="degrees">23</h3>
+                        </div>
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="row weather-days">
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Pazartesi</h2>
+                            <h3 class="degrees">25</h3>
+                            <canvas id="cloudy" width="32" height="32"></canvas>
+                            <h5>15 <i>km/s</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Salı</h2>
+                            <h3 class="degrees">13</h3>
+                            <canvas height="32" width="32" id="rain"></canvas>
+                            <h5>12 <i>km/s</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Çarşamba</h2>
+                            <h3 class="degrees">16</h3>
+                            <canvas height="32" width="32" id="snow"></canvas>
+                            <h5>14 <i>km/s</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Perşembe</h2>
+                            <h3 class="degrees">14</h3>
+                            <canvas height="32" width="32" id="sleet"></canvas>
+                            <h5>15 <i>km/s</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Cuma</h2>
+                            <h3 class="degrees">11</h3>
+                            <canvas height="32" width="32" id="wind"></canvas>
+                            <h5>11 <i>km/s</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Cumartesi</h2>
+                            <h3 class="degrees">20</h3>
+                            <canvas height="32" width="32" id="cloudy"></canvas>
+                            <h5>10 <i>km/s</i></h5>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- end of weather widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Tüm hakları saklıdır. <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script>
+      $(function(){
+        const colors = ['#3c9fdd', '#6ca2af', '#176586', '#cce0f5'];
+    
+        $('#world-map-gdp').vectorMap({
+          map: 'world_en',
+          backgroundColor: 'transparent',
+          borderColor: '#444',
+          borderWidth: 0.5,
+          color: '#07638d',
+          enableZoom: true,
+          showTooltip: true,
+    
+        
+          hoverColor: null,
+          hoverOpacity: 1,
+          selectedColor: null,
+    
+          onRegionTipShow: function(e, el, code){
+            // İstersen tooltip bilgisi buraya
+          }
+        });
+    
+        var mapObject = $('#world-map-gdp').vectorMap('get', 'mapObject');
+    
+        const regionColors = {};
+        Object.keys(mapObject.regions).forEach(code => {
+          const randomColor = colors[Math.floor(Math.random() * colors.length)];
+          regionColors[code] = randomColor;
+          mapObject.regions[code].element.setAttribute('fill', randomColor);
+        });
+    
+        function fadeColor(hex, opacity){
+          hex = hex.replace('#', '');
+          const r = parseInt(hex.substring(0, 2), 16);
+          const g = parseInt(hex.substring(2, 4), 16);
+          const b = parseInt(hex.substring(4, 6), 16);
+          return rgba({r},{g},{b},{opacity});
+        }
+      });
+      $('.nav.side-menu li a').on('click', function() {
+  var $li = $(this).parent();
+  if ($li.is('.active')) {
+    $li.removeClass('active active-sm');
+    $('ul:first', $li).slideUp();
+  } else {
+    // Tüm menüleri kapat
+    if (!$li.parent().is('.child_menu')) {
+      $('.nav.side-menu li').removeClass('active active-sm');
+      $('.nav.side-menu li ul').slideUp();
+    }
+    $li.addClass('active');
+    $('ul:first', $li).slideDown();
+  }
+})
+;
+
+    </script>
+    
+    
+    
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>
